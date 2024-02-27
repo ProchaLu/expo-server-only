@@ -1,7 +1,8 @@
+import { cache } from 'react';
 import { User } from '../migrations/00000-createTableUsers';
 import { sql } from './connect';
 
-export const getUsers = async () => {
+export const getUsers = cache(async () => {
   const users = await sql<User[]>`
     SELECT
       *
@@ -12,4 +13,4 @@ export const getUsers = async () => {
   `;
 
   return users;
-};
+});
