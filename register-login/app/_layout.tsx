@@ -1,9 +1,7 @@
+import { Pacifico_400Regular, useFonts } from '@expo-google-fonts/pacifico';
 import { Slot, usePathname } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
-
-import { Pacifico_400Regular, useFonts } from '@expo-google-fonts/pacifico';
-
 import Header from '../components/Header';
 import { colors } from '../styles/constants';
 
@@ -23,9 +21,9 @@ const styles = StyleSheet.create({
 function routeMapping(pathname: string) {
   switch (pathname) {
     case '/':
-      return 'Guest List';
-    case '/new-guest':
-      return 'New Guest';
+      return 'Login';
+    case '/register':
+      return 'Register';
     default:
       return '';
   }
