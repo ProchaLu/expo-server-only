@@ -15,7 +15,7 @@
     "@expo-google-fonts/pacifico": "^0.2.3",
     "@upleveled/ley": "^0.8.5",
     "dotenv-safe": "^9.0.0",
-    "expo": "~50.0.7",
+    "expo": "~50.0.8",
     "expo-constants": "~15.4.5",
     "expo-font": "~11.10.3",
     "expo-linking": "~6.2.2",
